@@ -26,7 +26,7 @@ public class Phyllotaxis : MonoBehaviour
 
     public void Update()
     {
-        //_degree = AudioPeer._freqBand[0] * 10;
+        _degree = AudioPeer._freqBand[0] * 100;
         _scale = 0.33f + AudioPeer._freqBand[1];
     }
 

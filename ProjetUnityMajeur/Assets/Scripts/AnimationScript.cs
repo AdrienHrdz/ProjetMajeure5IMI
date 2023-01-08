@@ -143,7 +143,7 @@ public class AnimationScript : MonoBehaviour
         {
             child.GetComponent<SpotRGB>()._intensity = intensity_spotRGB_bassefreq(AudioPeer._freqBand[0]);
 
-            child.GetComponent<SpotRGB>().transform.Rotate(0, 0, AudioPeer._freqBand[6] * 1000 * Time.deltaTime);
+            child.GetComponent<SpotRGB>().transform.Rotate(0, 0, AudioPeer._freqBand[6] * 10000 * Time.deltaTime);
         }
         
         ZoomCamera(AudioPeer._freqBand[1]);
