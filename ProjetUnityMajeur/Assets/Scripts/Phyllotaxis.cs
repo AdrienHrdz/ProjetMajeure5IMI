@@ -57,7 +57,7 @@ public class Phyllotaxis : MonoBehaviour
     private float _scaleTimer;
     private float _currentScale;
 
-
+    private Vector3 offset;
 
 
 
@@ -71,6 +71,16 @@ public class Phyllotaxis : MonoBehaviour
         _startPosition = this.transform.localPosition;
         _endPosition = new Vector3(_phyllotaxisPosition.x, _phyllotaxisPosition.y, 0);
     }
+
+    /*void Start()
+    {
+        offset = transform.parent.position - transform.position;
+
+    }
+    void LateUpdate()
+    {
+        transform.position += offset;
+    }*/
 
 
     void Awake()
@@ -92,6 +102,9 @@ public class Phyllotaxis : MonoBehaviour
 
     void Update ()
     {
+        //_trailColor = Color.HSVToRGB(Time.deltaTime, 1, 1);
+        //_trailMat.SetColor("_TintColor", _trailColor);
+
         if (_useScaleAnimation)
         {
             if (_useScaleCurve)
@@ -167,6 +180,7 @@ public class Phyllotaxis : MonoBehaviour
             transform.localPosition = new Vector3(_phyllotaxisPosition.x, _phyllotaxisPosition.y, 0);
             _number += _stepSize;
             _currentIteration++;
+
         }
     }
 
