@@ -200,7 +200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117552554}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.3, y: 1, z: -24.6}
+  m_LocalPosition: {x: 29.3, y: 1, z: -33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -361,10 +361,10 @@ MonoBehaviour:
     m_NumAlphaKeys: 4
   _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
   _spacingDirection: {x: 5, y: 0, z: 0}
-  _spacingBetweenAttractPoints: 1.2
-  _scaleAttractPoints: 2.3
+  _spacingBetweenAttractPoints: 1.1
+  _scaleAttractPoints: 5.9
   _amoutOfAtomsPerPoint: 64
-  _atomScaleMinMax: {x: 5, y: 10}
+  _atomScaleMinMax: {x: 24, y: 30}
   _strenghtOfAttraction: 100
   _maxMagnitude: 200
   _randomPosDistance: 10

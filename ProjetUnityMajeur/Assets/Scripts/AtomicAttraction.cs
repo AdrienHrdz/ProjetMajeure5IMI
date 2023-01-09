@@ -75,7 +75,7 @@ public class AtomicAttraction : MonoBehaviour
                 _atomScaleSet[_countAtom] = _randomScale;
                 _atomInstance.transform.localScale = new Vector3(_atomScaleSet[_countAtom], _atomScaleSet[_countAtom], _atomScaleSet[_countAtom]);
 
-                // _atomInstance.transform.parent = transform.parent.transform; 
+                //_atomInstance.transform.parent = transform.parent.transform;
                 _countAtom++;
             }
         }
