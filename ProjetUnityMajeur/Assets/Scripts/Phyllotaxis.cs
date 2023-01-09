@@ -24,6 +24,12 @@ public class Phyllotaxis : MonoBehaviour
     private TrailRenderer _trailRenderer;
     private Vector2 _phyllotaxisPosition;
 
+    public void Update()
+    {
+        _degree = AudioPeer._freqBand[0] * 100;
+        _scale = 0.33f + AudioPeer._freqBand[1];
+    }
+
     private Vector2 CalculatePhyllotaxis(float degree, float scale, int number)
     {
         double angle = number * (degree * Mathf.Deg2Rad);
