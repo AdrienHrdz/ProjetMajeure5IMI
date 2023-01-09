@@ -60,12 +60,12 @@ public class AtomicAttraction : MonoBehaviour
             // instantiate atoms
             for (int j = 0; j < _amoutOfAtomsPerPoint; j++)
             {
-                Gameobject _atomInstance = (GameObject)Instantiate(_atom);
+                GameObject _atomInstance = (GameObject)Instantiate(_atom);
                 _atomArray[_countAtom] = _atomInstance;
                 _atomInstance.GetComponent<AttractTo>()._attractedTo = _attractorArray[i].transform;
                 _atomInstance.GetComponent<AttractTo>()._strenghtOfAttraction = _strenghtOfAttraction;
                 _atomInstance.GetComponent<AttractTo>()._maxMagnitude = _maxMagnitude;
-                _atomInstance.GetComponent<AttractTo>()._useGravity = _useGravity;
+                _atomInstance.GetComponent<Rigidbody>().useGravity = _useGravity;
                 _atomInstance.transform.position = new Vector3(
                     _attractorArray[i].transform.position.x + Random.Range(-_randomPosDistance, _randomPosDistance),
                     _attractorArray[i].transform.position.y + Random.Range(-_randomPosDistance, _randomPosDistance),
@@ -73,7 +73,9 @@ public class AtomicAttraction : MonoBehaviour
                 
                 float _randomScale = Random.Range(_atomScaleMinMax.x, _atomScaleMinMax.y);
                 _atomScaleSet[_countAtom] = _randomScale;
-                _atomInstance.transform.localScale = new Vector3(); 
+                _atomInstance.transform.localScale = new Vector3(_atomScaleSet[_countAtom], _atomScaleSet[_countAtom], _atomScaleSet[_countAtom]);
+
+                // _atomInstance.transform.parent = transform.parent.transform; 
                 _countAtom++;
             }
         }
