@@ -13,6 +13,16 @@ public class AudioPeer : MonoBehaviour
     public static float[] _bandBuffer = new float[8];
     float[] _bufferDecrease = new float[8];
 
+    //avoir value entre 0 et 1 (plus pratique √† utiliser)
+    float[] _freqBandHighest = new float[8]; 
+    public static float[] _audioBand = new float[8];
+    public static float[] _audioBandBuffer = new float[8];
+
+    //permet d'obtenir l'amplitude moyenne de tous le signal
+    public static float _Amplitude;
+    public static float _AmplitudeBuffer;
+    float _AmplitudeHighest;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +36,38 @@ public class AudioPeer : MonoBehaviour
         GetSpectrumAudioSource();
         MakeFrequencyBands();
         BandBuffer();
+        CreateAudioBands();
+        GetAmplitude();
+    }
+
+    void GetAmplitude() //r√©cup√®re l'amplitude moyenne de tout le signal
+    {
+        float _CurrentAmplitude = 0;
+        float _CurrentAmplitudeBuffer = 0;
+        for (int i = 0; i < 8; i++)
+        {
+            _CurrentAmplitude += _audioBand [i];
+            _CurrentAmplitudeBuffer += _audioBandBuffer [i];
+        }
+        if (_CurrentAmplitude > _AmplitudeHighest) 
+        {
+            _AmplitudeHighest = _CurrentAmplitude;
+        }
+        _Amplitude = _CurrentAmplitude / _AmplitudeHighest;
+        _AmplitudeBuffer = _CurrentAmplitudeBuffer / _AmplitudeHighest;
+    }
+
+    void CreateAudioBands() //normalise nos bande entre 0 et 1
+    {
+        for (int i = 0; i < 8; i++)
+        {
+            if (_freqBand[i] > _freqBandHighest [i])
+            {
+                _freqBandHighest[i] = _freqBand[i];
+            }
+            _audioBand[i] = (_freqBand[i] / _freqBandHighest[i]);
+            _audioBandBuffer[i] = (_bandBuffer[i] / _freqBandHighest[i]);
+        }
     }
 
     void GetSpectrumAudioSource()
@@ -55,9 +97,9 @@ public class AudioPeer : MonoBehaviour
     void MakeFrequencyBands()
     {
         /*
-         * 22050 / 512 = 43 Hz pa Èchantillon
+         * 22050 / 512 = 43 Hz pa ÔøΩchantillon
          * 
-         * on peut diviser notre spectre audio en 7 catÈgorie
+         * on peut diviser notre spectre audio en 7 catÔøΩgorie
          * 20-60 hz
          * 60-250 hz
          * 250-500
@@ -66,7 +108,7 @@ public class AudioPeer : MonoBehaviour
          * 4000-6000
          * 6000-20000
          * 
-         * on veut placer le bon nombre d'Èchantillons dans chaque catÈgorie
+         * on veut placer le bon nombre d'ÔøΩchantillons dans chaque catÔøΩgorie
          * 0 - 2 = 86 hz 
          * 1 - 4 = 172 hz 87->258
          * 2 - 8 = 344 hz 259->602
