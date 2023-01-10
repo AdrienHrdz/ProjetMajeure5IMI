@@ -109,7 +109,7 @@ public class Phyllotaxis : MonoBehaviour
         {
             if (_useScaleCurve)
             {
-                _scaleTimer += (_scaleAnimSpeed * AudioPeer._freqBand[_scaleBand] * Time.deltaTime);
+                _scaleTimer += (_scaleAnimSpeed * AudioPeer._audioBand[_scaleBand] * Time.deltaTime);
                 if (_scaleTimer >= 1)
                 {
                     _scaleTimer -= 1;
@@ -129,7 +129,7 @@ public class Phyllotaxis : MonoBehaviour
         {
             if (_isLerping)
             {
-                _lerpPosSpeed = Mathf.Lerp(_lerpPosSpeedMinMax.x, _lerpPosSpeedMinMax.y, _lerpPosAnimCurve.Evaluate(AudioPeer._freqBand[_lerpPosBand]));
+                _lerpPosSpeed = Mathf.Lerp(_lerpPosSpeedMinMax.x, _lerpPosSpeedMinMax.y, _lerpPosAnimCurve.Evaluate(AudioPeer._audioBand[_lerpPosBand]));
                 _lerpPosTimer += Time.deltaTime * _lerpPosSpeed;
                 transform.localPosition = Vector3.Lerp(_startPosition, _endPosition, Mathf.Clamp01(_lerpPosTimer));
                 if (_lerpPosTimer >= 1 )
