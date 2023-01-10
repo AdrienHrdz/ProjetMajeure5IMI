@@ -15,7 +15,7 @@ public class PhylloTunnel : MonoBehaviour
     {   
         if (_useBand)
         {
-            _tunnel.position = new Vector3(_tunnel.position.x, _tunnel.position.y, _tunnel.position.z + (AudioPeer._audioBand[_scaleBand] * _tunnelSpeed));
+            _tunnel.position = new Vector3(_tunnel.position.x, _tunnel.position.y, _tunnel.position.z + (AudioPeer._freqBand[_scaleBand] * _tunnelSpeed));
         }
         else
         {

@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 111055293}
   - component: {fileID: 111055292}
   - component: {fileID: 111055291}
+  - component: {fileID: 111055294}
   m_Layer: 0
   m_Name: PhyllotaxisTrail (2)
   m_TagString: Untagged
@@ -154,14 +155,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioPeer: {fileID: 1616568413}
-  _trailColor: {r: 1, g: 1, b: 1, a: 1}
+  _trailColor: {r: 0.0658597, g: 0.22366256, b: 0.9433962, a: 1}
   _degree: 2
   _scale: 0.1
   _numberStart: 5060
   _stepSize: 1
   _maxIterations: 176
   _useLerping: 1
-  _lerpPosSpeedMinMax: {x: 100, y: 100}
+  _lerpPosSpeedMinMax: {x: 100, y: 1000}
   _lerpPosAnimCurve:
     serializedVersion: 2
     m_Curve:
@@ -332,13 +333,26 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111055290}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.103557885, y: 0.61128056, z: 2.217216}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.103557885, y: 0.61128056, z: 2.2172165}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &111055294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111055290}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e330562b191b5542a1032b6ff232b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 963194225}
 --- !u!1 &293599129
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,6 +364,7 @@ GameObject:
   - component: {fileID: 293599132}
   - component: {fileID: 293599131}
   - component: {fileID: 293599130}
+  - component: {fileID: 293599133}
   m_Layer: 0
   m_Name: PhyllotaxisTrail (6)
   m_TagString: Untagged
@@ -377,7 +392,7 @@ MonoBehaviour:
   _stepSize: 1
   _maxIterations: 176
   _useLerping: 1
-  _lerpPosSpeedMinMax: {x: 100, y: 100}
+  _lerpPosSpeedMinMax: {x: 100, y: 1000}
   _lerpPosAnimCurve:
     serializedVersion: 2
     m_Curve:
@@ -548,13 +563,26 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293599129}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.103557885, y: 0.61128056, z: 2.217216}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.103557885, y: 0.61128056, z: 2.2172165}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &293599133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293599129}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e330562b191b5542a1032b6ff232b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 963194225}
 --- !u!1 &662765650
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,7 +1001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e330562b191b5542a1032b6ff232b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 963194225}
+  parent: {fileID: 0}
 --- !u!1 &866866225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1024,7 +1052,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &902569969
 GameObject:
@@ -1446,8 +1474,8 @@ MonoBehaviour:
   _tunnel: {fileID: 1057163505}
   _audioPeer: {fileID: 1616568413}
   _scaleBand: 0
-  _tunnelSpeed: 10
-  _cameraDistance: -750
+  _tunnelSpeed: 20
+  _cameraDistance: -1000
   _useBand: 1
 --- !u!1 &985181573
 GameObject:
@@ -1481,7 +1509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioPeer: {fileID: 1616568413}
-  _trailColor: {r: 0.9764705, g: 0, b: 1, a: 1}
+  _trailColor: {r: 1, g: 0.9771983, b: 0, a: 1}
   _degree: 2
   _scale: 0.01
   _numberStart: 10030
@@ -1775,7 +1803,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1236510217
 GameObject:
@@ -2013,6 +2041,7 @@ GameObject:
   - component: {fileID: 1431194553}
   - component: {fileID: 1431194552}
   - component: {fileID: 1431194551}
+  - component: {fileID: 1431194554}
   m_Layer: 0
   m_Name: PhyllotaxisTrail (4)
   m_TagString: Untagged
@@ -2033,14 +2062,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioPeer: {fileID: 1616568413}
-  _trailColor: {r: 1, g: 1, b: 1, a: 1}
+  _trailColor: {r: 0.9811321, g: 0.06849409, b: 0.06849409, a: 1}
   _degree: 2
   _scale: 0.1
   _numberStart: 5120
   _stepSize: 1
   _maxIterations: 176
   _useLerping: 1
-  _lerpPosSpeedMinMax: {x: 100, y: 100}
+  _lerpPosSpeedMinMax: {x: 100, y: 1000}
   _lerpPosAnimCurve:
     serializedVersion: 2
     m_Curve:
@@ -2211,13 +2240,26 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431194550}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.103557885, y: 0.61128056, z: 2.217216}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.103557885, y: 0.61128056, z: 2.2172165}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1431194554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431194550}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e330562b191b5542a1032b6ff232b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 963194225}
 --- !u!1 &1616568412
 GameObject:
   m_ObjectHideFlags: 0
@@ -2258,7 +2300,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c0425d9a44b320d489f038644a3469d3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b5f104a781067bc47953ea6459553bc9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.302
   m_Pitch: 1
@@ -2356,7 +2398,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1988189614
 GameObject:
@@ -2375,7 +2417,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1988189615
 Transform:
   m_ObjectHideFlags: 0
@@ -2777,7 +2819,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2014359169
 GameObject:
@@ -2811,7 +2853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioPeer: {fileID: 1616568413}
-  _trailColor: {r: 0.9764705, g: 0, b: 1, a: 1}
+  _trailColor: {r: 0, g: 1, b: 0.088377, a: 1}
   _degree: 2
   _scale: 0.01
   _numberStart: 10090

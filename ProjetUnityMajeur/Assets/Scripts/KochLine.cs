@@ -10,11 +10,12 @@ public class KochLine : KochGenerator
     void Start()
     {
         _lineRenderer = GetComponent<LineRenderer>();
-        _lineRenderer.enabled = true;
-        _lineRenderer.useWorldSpace = false;
-        _lineRenderer.loop = true;
         _lineRenderer.positionCount = _position.Length;
         _lineRenderer.SetPositions(_position);
+        //_lineRenderer.enabled = true;
+        //_lineRenderer.useWorldSpace = false;
+        //_lineRenderer.loop = true;
+
     }
 
     // Update is called once per frame
