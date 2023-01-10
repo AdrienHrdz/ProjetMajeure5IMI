@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class OffsetPhyllo : MonoBehaviour
 {
-    public GameObject parent;
+    private GameObject parent;
     private Vector3 offset;
     // Start is called before the first frame update
     void Start()
     {
         /*offset = transform.postion - parent.transform.position;*/
+        parent = transform.parent.gameObject;
         offset = new Vector3(0, 0, 40);
     }
 
