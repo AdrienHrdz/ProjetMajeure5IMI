@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 
 # Charger le fichier audio en utilisant Librosa
 audio, sr = librosa.load("songTest.mp3", sr=None, mono=False)
+print(np.shape(audio))
+
 print('1')
 # Effectuer une FFT sur l'audio
 fft = np.fft.fft(audio)
