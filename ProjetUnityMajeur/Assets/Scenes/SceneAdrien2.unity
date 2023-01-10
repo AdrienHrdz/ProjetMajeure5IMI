@@ -1447,7 +1447,8 @@ MonoBehaviour:
   _audioPeer: {fileID: 1616568413}
   _scaleBand: 0
   _tunnelSpeed: 10
-  _cameraDistance: -1000
+  _cameraDistance: -750
+  _useBand: 1
 --- !u!1 &985181573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2257,7 +2258,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b5f104a781067bc47953ea6459553bc9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c0425d9a44b320d489f038644a3469d3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.302
   m_Pitch: 1
