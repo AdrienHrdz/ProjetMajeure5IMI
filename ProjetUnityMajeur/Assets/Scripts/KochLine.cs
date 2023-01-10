@@ -10,11 +10,12 @@ public class KochLine : KochGenerator
     void Start()
     {
         _lineRenderer = GetComponent<LineRenderer>();
+        _linerenderer.enabled = true;
+        _linerenderer.useworldspace = false;
+        _linerenderer.loop = true;
         _lineRenderer.positionCount = _position.Length;
         _lineRenderer.SetPositions(_position);
-        //_lineRenderer.enabled = true;
-        //_lineRenderer.useWorldSpace = false;
-        //_lineRenderer.loop = true;
+
 
     }
 
