@@ -25,13 +25,31 @@ public class KochGenerator : MonoBehaviour {
 
     public struct LineSegment
     {
-
+        public Vector3 StartPosition {get; set; }
+        public Vector3 EndPosition {get; set; }
+        public Vector3 Direction {get; set; }
+        public float Length {get; set; }
     }
     [SerializeField]
     protected _initiator initiator = new _initiator();
     [SerializeField]
     protected AnimationCurve _generator;
+
+    [System.Serializable]
+    public struct StartGen{
+        public bool outwards;
+        public float scale;
+    }
+
+    public StartGen[] _startGen;
+
     protected Keyframe[] _keys;
+    [SerializeField]
+    protected bool _useBezierCurves;
+    [SerializeField]
+    [Range(8,24)]
+    protected int _bezierVertexCount;
+
 
     protected int _generationCount;
     
@@ -47,8 +65,32 @@ public class KochGenerator : MonoBehaviour {
     [SerializeField] 
     protected float _initiatorSize;
 
+
+
     protected Vector3[] _position;
     protected Vector3[] _targetPosition;    
+    protected Vector3[] _bezierPosition;
+    private List<LineSegment> _lineSegment;
+
+
+    protected Vector3[] BezierCurve(Vector3[] points, int vertexCount)
+    {
+        var pointList = new List<Vector3>();
+        for (int i = 0; i < points.Length; i +=2)
+        {
+            if (i+2 <= points.Length - 1)
+            {
+                for (float ratio = 0f; ratio <= 1f; ratio +=1.0f / vertexCount)
+                {
+                    var tangentLineVertex1 = Vector3.Lerp(points[i], points[i+1],ratio);
+                    var tangentLineVertex2 = Vector3.Lerp(points[i+1], points[i+2],ratio);
+                    var bezierpoint = Vector3.Lerp(tangentLineVertex1,tangentLineVertex2,ratio);
+                    pointList.Add(bezierpoint);
+                }
+            }   
+         }
+         return pointList.ToArray();
+    }
 
     private void Awake()
     {
@@ -57,6 +99,7 @@ public class KochGenerator : MonoBehaviour {
 
         _position = new Vector3[_initiatorPointAmount+1];
         _targetPosition = new Vector3[_initiatorPointAmount + 1];
+        _lineSegment = new List<LineSegment>();
         _keys = _generator.keys;
 
 
@@ -67,7 +110,78 @@ public class KochGenerator : MonoBehaviour {
             _rotateVector = Quaternion.AngleAxis(360 / _initiatorPointAmount, _rotateAxis) * _rotateVector;
         }
         _position[_initiatorPointAmount] = _position[0];
+        _targetPosition = _position;
+
+        for (int i = 0; i < _startGen.Length; i++)
+        {
+            KochGenerate(_targetPosition, _startGen[i].outwards, _startGen[i].scale);
+        }
+
     }
+
+    protected void KochGenerate(Vector3[] positions, bool outwards, float generatorMultiplier)
+    {
+        //creating line segments
+        _lineSegment.Clear();
+        for (int i = 0; i< positions.Length - 1; i ++)
+        {
+            LineSegment line = new LineSegment();
+            line.StartPosition = positions[i];
+            if(i == positions.Length - 1)
+            {
+                line.EndPosition = positions [0];
+            }
+            else
+            {
+                line.EndPosition = positions[i + 1];
+            }
+            line.Direction = (line.EndPosition - line.StartPosition).normalized;
+            line.Length = Vector3.Distance(line.EndPosition, line. StartPosition);
+            _lineSegment.Add(line);
+        }
+        //add the line segment to point array
+        List<Vector3> newPos = new List<Vector3>();
+        List<Vector3> targetPos = new List<Vector3>();
+
+        for (int i=0; i < _lineSegment.Count; i++)
+        {
+            newPos.Add(_lineSegment[i].StartPosition);
+            targetPos.Add(_lineSegment[i].StartPosition);
+
+            for (int j =1; j < _keys.Length - 1; j++)
+            {
+                float moveAmount = _lineSegment[i].Length * _keys[j].time;
+                float heightAmount = (_lineSegment[i].Length * _keys[j].value) * generatorMultiplier;
+                Vector3 movePos =  _lineSegment[i].StartPosition + (_lineSegment[i].Direction * moveAmount);
+                Vector3 Dir;
+                if (outwards)
+                {
+                    Dir = Quaternion.AngleAxis(-90, _rotateAxis) * _lineSegment[i].Direction;
+                }
+                else
+                {
+                    Dir = Quaternion.AngleAxis(90, _rotateAxis) * _lineSegment[i].Direction;
+                }
+                newPos.Add(movePos);
+                targetPos.Add(movePos + (Dir * heightAmount));
+            }
+        }
+        newPos.Add(_lineSegment[0].StartPosition);
+        targetPos.Add(_lineSegment[0].StartPosition);
+        _position = new Vector3[newPos.Count];
+        _targetPosition = new Vector3[targetPos.Count];
+        _position = newPos.ToArray();
+        _targetPosition = targetPos.ToArray();
+        _bezierPosition = BezierCurve(_targetPosition, _bezierVertexCount);
+        _generationCount++;
+    }
+
+
+
+    public float _lengthOfSides;
+
+
+
 
     private void OnDrawGizmos()
     {
@@ -97,6 +211,7 @@ public class KochGenerator : MonoBehaviour {
                 Gizmos.DrawLine(_initiatorPoint[i], _initiatorPoint[0]);
             }
         }
+        _lengthOfSides = Vector3.Distance(_initiatorPoint[0], _initiatorPoint[1])*0.5f;
     }
 
     private void GetInitiatorPoints()
