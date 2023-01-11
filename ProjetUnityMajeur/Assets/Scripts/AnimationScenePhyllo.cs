@@ -9,6 +9,7 @@ public class AnimationScenePhyllo : MonoBehaviour
     public float _intensityDefault = 0.5f;
     public float _intensityMultiplier = 1f;
     public GameObject[] lights;
+    public GameObject[] phylloTrails;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +44,12 @@ public class AnimationScenePhyllo : MonoBehaviour
             go.GetComponent<SpotRGB>()._intensity = intensity_spotRGB_bassefreq(checksAudioPeer[0]);
             go.GetComponent<SpotRGB>().transform.Rotate(0,0,checksAudioPeer[6]*10000*Time.deltaTime);
         }
-        
+        foreach (GameObject go in phylloTrails)
+        {
+            if (AudioPeer._freqBand[0] <= 0.2f)
+                go.SetActive(true);
+            else
+                go.SetActive(false);
+        }
     }
 }
