@@ -256,7 +256,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 77225ad136c8bc547bfd11bcf935047d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c9131122d8c9e5341b776d821bb35cad, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.302
   m_Pitch: 1
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fcecf2900f100a40956eb39074ed815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBeforeLoading: 2
+  delayBeforeLoading: 1
   sceneNameToLoad: SceneKoch
   _audioPeer: {fileID: 320495281}
   Apmlitude: 0

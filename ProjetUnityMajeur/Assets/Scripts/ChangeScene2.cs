@@ -19,7 +19,11 @@ public class ChangeScene2 : MonoBehaviour
 
         if (timeElapsed > delayBeforeLoading)
         {
-            SceneManager.LoadScene(sceneNameToLoad);
+            if (AudioPeer._AmplitudeBuffer < 0.2f)
+            {
+                SceneManager.LoadScene(sceneNameToLoad);
+                DontDestroyOnLoad(this._audioPeer);
+            }
         }
     }
 }

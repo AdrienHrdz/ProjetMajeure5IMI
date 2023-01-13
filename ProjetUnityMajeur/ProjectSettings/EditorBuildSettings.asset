@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SceneKoch.unity
     guid: d48560a738c1d314f9ac5fb2b1605ab0
+  - enabled: 1
+    path: Assets/Scenes/SceneKochTrail.unity
+    guid: 9352f48f15530ac4db48360f807c49ea
   m_configObjects: {}

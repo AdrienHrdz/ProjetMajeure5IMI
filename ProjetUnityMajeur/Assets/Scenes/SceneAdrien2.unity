@@ -2433,8 +2433,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9c5d435f3c0dd04e97c10a014ba1c42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBeforeLoading: 20
-  sceneNameToLoad: SceneKoch
+  delayBeforeLoading: 10
+  sceneNameToLoad: SceneKochTrail
+  _audioPeer: {fileID: 1616568413}
 --- !u!4 &1973612013
 Transform:
   m_ObjectHideFlags: 0

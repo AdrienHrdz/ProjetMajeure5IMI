@@ -18,14 +18,14 @@ public class ChangeScene : MonoBehaviour
     private void Update()
     {
         timeElapsed += Time.deltaTime;
-        Apmlitude = AudioPeer._bandBuffer[0];
+        Apmlitude = AudioPeer._AmplitudeBuffer;
         if (timeElapsed > delayBeforeLoading)
         {
-            if (AudioPeer._bandBuffer[0] > 0.5f)
-            {
+            
+            
             SceneManager.LoadScene(sceneNameToLoad);
             DontDestroyOnLoad(this._audioPeer);
-            }
+            
 
         }
     }
