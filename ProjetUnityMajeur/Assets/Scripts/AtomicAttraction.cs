@@ -39,6 +39,16 @@ public class AtomicAttraction : MonoBehaviour
     public enum _atomScale {Buffered, NoBuffer};
     public _atomScale atomScale = new _atomScale();
 
+    public bool _animatePos;
+    Vector3 _startPoint;
+    public Vector3 _destination;
+    public AnimationCurve _animationCurve;
+    float _animTimer;
+    public float _animSpeed;
+    public int _posAnimBand;
+    public bool _posAnimBuffered;
+    public float _posAnimThreshold;
+
     private void OnDrawGizmos()
     {
         for (int i = 0; i < _attractPoints.Length; i++)
@@ -54,11 +64,16 @@ public class AtomicAttraction : MonoBehaviour
             
             Gizmos.DrawSphere(pos, _scaleAttractPoints);
         }
+        Gizmos.color = new Color(1, 1, 1, 1);
+        Vector3 startPoint = transform.position;
+        Vector3 endPoint = transform.position + _destination;
+        Gizmos.DrawLine(startPoint, endPoint);
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        _startPoint = transform.position;
         _attractorArray = new GameObject[_attractPoints.Length];
         _atomArray = new GameObject[_attractPoints.Length * _amountOfAtomsPerPoint];
         _atomScaleSet = new float[_attractPoints.Length * _amountOfAtomsPerPoint];
@@ -123,6 +138,7 @@ public class AtomicAttraction : MonoBehaviour
     {
         SelectAudioValues();
         AtomBehavior();
+        AnimatePosition();
     }
 
     void AtomBehavior()
@@ -152,6 +168,60 @@ public class AtomicAttraction : MonoBehaviour
                     _atomScaleSet[countAtom] * _audioBandScale[_attractPoints[i]] * _audioScaleMultiplier);
                 countAtom++;
             }
+        }
+    }
+
+    void AnimatePosition()
+    {
+        // Check threshold
+        if(_posAnimBuffered)
+        {
+            if(AudioPeer._audioBandBuffer[_posAnimBand] >= _posAnimThreshold)
+            {
+                _animatePos = true;
+            }
+            else
+            {
+                _animatePos = false;
+            }
+        }
+        else
+        {
+            if(AudioPeer._audioBand[_posAnimBand] >= _posAnimThreshold)
+            {
+                _animatePos = true;
+            }
+            else
+            {
+                _animatePos = false;
+            }
+        }
+
+        // Animation
+        if(_animatePos)
+        {
+            if (_posAnimBuffered)
+            {
+                if (!System.Single.IsNaN(AudioPeer._audioBandBuffer[_posAnimBand]))
+                {
+                    _animTimer += Time.deltaTime * AudioPeer._audioBandBuffer[_posAnimBand] * _animSpeed;
+                } 
+            }
+            else
+            {
+                if (!System.Single.IsNaN(AudioPeer._freqBand[_posAnimBand]))
+                {
+                    _animTimer += Time.deltaTime * AudioPeer._freqBand[_posAnimBand] * _animSpeed;
+                }
+            }
+            if (_animTimer >= 1)
+            {
+                _animTimer -= 1f;
+            }
+            Debug.Log(_animTimer);
+            float _alphaTime = _animationCurve.Evaluate(_animTimer);
+            Vector3 endPoint = _destination + _startPoint;
+            transform.position = Vector3.Lerp(_startPoint, endPoint, _alphaTime);
         }
     }
 
