@@ -168,8 +168,8 @@ MonoBehaviour:
     ctime1: 13107
     ctime2: 23130
     ctime3: 33924
-    ctime4: 44140
-    ctime5: 55319
+    ctime4: 41634
+    ctime5: 50886
     ctime6: 65535
     ctime7: 65535
     atime0: 0
@@ -186,9 +186,9 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 392e0ee7f170e35499e68414a1db6f0c, type: 2}
   _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
   _spacingDirection: {x: 0, y: -1, z: 1}
-  _spacingBetweenAttractPoints: 5
-  _scaleAttractPoints: 10
-  _amountOfAtomsPerPoint: 32
+  _spacingBetweenAttractPoints: 1.5
+  _scaleAttractPoints: 5.1
+  _amountOfAtomsPerPoint: 16
   _atomScaleMinMax: {x: 3, y: 10}
   _strenghtOfAttraction: 200
   _maxMagnitude: 100
@@ -346,8 +346,8 @@ MonoBehaviour:
     ctime1: 13107
     ctime2: 23130
     ctime3: 33924
-    ctime4: 44140
-    ctime5: 55319
+    ctime4: 41634
+    ctime5: 50886
     ctime6: 65535
     ctime7: 65535
     atime0: 0
@@ -364,9 +364,9 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 392e0ee7f170e35499e68414a1db6f0c, type: 2}
   _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
   _spacingDirection: {x: 1, y: -1, z: 0}
-  _spacingBetweenAttractPoints: 5
-  _scaleAttractPoints: 10
-  _amountOfAtomsPerPoint: 32
+  _spacingBetweenAttractPoints: 1.5
+  _scaleAttractPoints: 5.1
+  _amountOfAtomsPerPoint: 16
   _atomScaleMinMax: {x: 3, y: 10}
   _strenghtOfAttraction: 200
   _maxMagnitude: 100
@@ -857,8 +857,8 @@ MonoBehaviour:
     ctime1: 13107
     ctime2: 23130
     ctime3: 33924
-    ctime4: 44140
-    ctime5: 55319
+    ctime4: 41634
+    ctime5: 50886
     ctime6: 65535
     ctime7: 65535
     atime0: 0
@@ -875,9 +875,9 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 392e0ee7f170e35499e68414a1db6f0c, type: 2}
   _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
   _spacingDirection: {x: -1, y: -1, z: 0}
-  _spacingBetweenAttractPoints: 5
-  _scaleAttractPoints: 10
-  _amountOfAtomsPerPoint: 32
+  _spacingBetweenAttractPoints: 1.5
+  _scaleAttractPoints: 5.1
+  _amountOfAtomsPerPoint: 16
   _atomScaleMinMax: {x: 3, y: 10}
   _strenghtOfAttraction: 200
   _maxMagnitude: 100
@@ -988,8 +988,8 @@ MonoBehaviour:
     ctime1: 13107
     ctime2: 23130
     ctime3: 33924
-    ctime4: 44140
-    ctime5: 55319
+    ctime4: 41634
+    ctime5: 50886
     ctime6: 65535
     ctime7: 65535
     atime0: 0
@@ -1006,9 +1006,9 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 392e0ee7f170e35499e68414a1db6f0c, type: 2}
   _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
   _spacingDirection: {x: 0, y: -1, z: -1}
-  _spacingBetweenAttractPoints: 5
-  _scaleAttractPoints: 10
-  _amountOfAtomsPerPoint: 32
+  _spacingBetweenAttractPoints: 1.5
+  _scaleAttractPoints: 5.1
+  _amountOfAtomsPerPoint: 16
   _atomScaleMinMax: {x: 3, y: 10}
   _strenghtOfAttraction: 200
   _maxMagnitude: 100
@@ -1212,8 +1212,8 @@ MonoBehaviour:
     ctime1: 13107
     ctime2: 23130
     ctime3: 33924
-    ctime4: 44140
-    ctime5: 55319
+    ctime4: 41634
+    ctime5: 50886
     ctime6: 65535
     ctime7: 65535
     atime0: 0
@@ -1230,9 +1230,9 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 392e0ee7f170e35499e68414a1db6f0c, type: 2}
   _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
   _spacingDirection: {x: 1, y: 1, z: 0}
-  _spacingBetweenAttractPoints: 5
-  _scaleAttractPoints: 10
-  _amountOfAtomsPerPoint: 32
+  _spacingBetweenAttractPoints: 1.5
+  _scaleAttractPoints: 5.1
+  _amountOfAtomsPerPoint: 16
   _atomScaleMinMax: {x: 3, y: 10}
   _strenghtOfAttraction: 200
   _maxMagnitude: 100
@@ -1548,8 +1548,8 @@ MonoBehaviour:
     ctime1: 13107
     ctime2: 23130
     ctime3: 33924
-    ctime4: 44140
-    ctime5: 55319
+    ctime4: 41634
+    ctime5: 50886
     ctime6: 65535
     ctime7: 65535
     atime0: 0
@@ -1566,9 +1566,9 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 392e0ee7f170e35499e68414a1db6f0c, type: 2}
   _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
   _spacingDirection: {x: -1, y: 1, z: 0}
-  _spacingBetweenAttractPoints: 5
-  _scaleAttractPoints: 10
-  _amountOfAtomsPerPoint: 32
+  _spacingBetweenAttractPoints: 1.5
+  _scaleAttractPoints: 5.1
+  _amountOfAtomsPerPoint: 16
   _atomScaleMinMax: {x: 3, y: 10}
   _strenghtOfAttraction: 200
   _maxMagnitude: 100
@@ -2030,8 +2030,8 @@ MonoBehaviour:
     ctime1: 13107
     ctime2: 23130
     ctime3: 33924
-    ctime4: 44140
-    ctime5: 55319
+    ctime4: 41634
+    ctime5: 50886
     ctime6: 65535
     ctime7: 65535
     atime0: 0
@@ -2048,9 +2048,9 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 392e0ee7f170e35499e68414a1db6f0c, type: 2}
   _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
   _spacingDirection: {x: 0, y: 1, z: 1}
-  _spacingBetweenAttractPoints: 5
-  _scaleAttractPoints: 10
-  _amountOfAtomsPerPoint: 32
+  _spacingBetweenAttractPoints: 1.5
+  _scaleAttractPoints: 5.1
+  _amountOfAtomsPerPoint: 16
   _atomScaleMinMax: {x: 3, y: 10}
   _strenghtOfAttraction: 200
   _maxMagnitude: 100
@@ -2161,8 +2161,8 @@ MonoBehaviour:
     ctime1: 13107
     ctime2: 23130
     ctime3: 33924
-    ctime4: 44140
-    ctime5: 55319
+    ctime4: 41634
+    ctime5: 50886
     ctime6: 65535
     ctime7: 65535
     atime0: 0
@@ -2179,9 +2179,9 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 392e0ee7f170e35499e68414a1db6f0c, type: 2}
   _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
   _spacingDirection: {x: 0, y: 1, z: -1}
-  _spacingBetweenAttractPoints: 5
-  _scaleAttractPoints: 10
-  _amountOfAtomsPerPoint: 32
+  _spacingBetweenAttractPoints: 1.5
+  _scaleAttractPoints: 5.1
+  _amountOfAtomsPerPoint: 16
   _atomScaleMinMax: {x: 3, y: 10}
   _strenghtOfAttraction: 200
   _maxMagnitude: 100
