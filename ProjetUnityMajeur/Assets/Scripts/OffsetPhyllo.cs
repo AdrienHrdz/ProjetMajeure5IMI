@@ -10,8 +10,7 @@ public class OffsetPhyllo : MonoBehaviour
     void Start()
     {
         /*offset = transform.postion - parent.transform.position;*/
-        parent = transform.parent.gameObject;
-        offset = new Vector3(0, 0, 40);
+        offset = new Vector3(0, 0, 100);
     }
 
     // Update is called once per frame
