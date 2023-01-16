@@ -316,7 +316,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1253445994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,54 +468,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dc0fa5d94761064d9b8e8f4ccc8ed82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _atom: {fileID: 1662951093903490954, guid: 845390350fef5a34fa1c4c4d9624554c, type: 3}
-  _attractor: {fileID: 3656540163243511991, guid: caa04eefb9e8cf74a98fb6f08f1c269a, type: 3}
-  _gradient:
-    serializedVersion: 2
-    key0: {r: 0, g: 0.0022439957, b: 1, a: 1}
-    key1: {r: 0.15217757, g: 1, b: 0, a: 1}
-    key2: {r: 1, g: 0, b: 0, a: 1}
-    key3: {r: 0, g: 0, b: 0, a: 1}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 7325
-    ctime1: 30647
-    ctime2: 58596
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 15227
-    atime2: 23516
-    atime3: 65535
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 4
-  _material: {fileID: 2100000, guid: 392e0ee7f170e35499e68414a1db6f0c, type: 2}
-  _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
-  _spacingDirection: {x: 1, y: 0, z: 0}
-  _spacingBetweenAttractPoints: 3
-  _scaleAttractPoints: 2.5
-  _amoutOfAtomsPerPoint: 64
-  _atomScaleMinMax: {x: 0.4, y: 2}
-  _strenghtOfAttraction: 100
-  _maxMagnitude: 200
-  _randomPosDistance: 10
-  _useGravity: 0
-  _audioScaleMultiplier: 2
-  _audioEmissionMultiplier: 1
-  _thresholdEmission: 0.362
-  emisionThreshold: 0
-  emisionColor: 0
-  atomScale: 1
 --- !u!4 &1699724161
 Transform:
   m_ObjectHideFlags: 0

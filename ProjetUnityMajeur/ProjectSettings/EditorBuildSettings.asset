@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ScenePrincipal.unity
     guid: a1ab043003f18e24d916520b2370ec2a
   - enabled: 1
-    path: Assets/Scenes/SceneAdrien2.unity
+    path: Assets/Scenes/ScenePhyllo.unity
     guid: 542182781e4587347b1abb57b0d6c31b
   - enabled: 1
     path: Assets/Scenes/SceneKoch.unity
@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SceneKochTrail.unity
     guid: 9352f48f15530ac4db48360f807c49ea
+  - enabled: 1
+    path: Assets/Scenes/SceneAtomVisu.unity
+    guid: 294698b11b230c0469e8d57d1ac724aa
+  - enabled: 0
+    path: Assets/Scenes/TestScene.unity
+    guid: c2c0132599a33854e84857ef1a1f528c
   m_configObjects: {}

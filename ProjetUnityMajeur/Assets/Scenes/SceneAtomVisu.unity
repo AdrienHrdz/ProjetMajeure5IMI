@@ -156,8 +156,8 @@ MonoBehaviour:
   _attractor: {fileID: 3061966838894134775, guid: 6761f49a2b2e6b240bd67eee13f1744e, type: 3}
   _gradient:
     serializedVersion: 2
-    key0: {r: 0, g: 0.0022439957, b: 1, a: 1}
-    key1: {r: 0.019607855, g: 0.79115576, b: 0.8745098, a: 1}
+    key0: {r: 0.6101732, g: 0, b: 1, a: 1}
+    key1: {r: 0.019607855, g: 0.13992342, b: 0.8745098, a: 1}
     key2: {r: 0.07520782, g: 0.73187166, b: 0.120258704, a: 1}
     key3: {r: 0.44253698, g: 0.5568628, b: 0.06666667, a: 1}
     key4: {r: 1, g: 0.74758863, b: 0, a: 0}
@@ -186,17 +186,17 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 392e0ee7f170e35499e68414a1db6f0c, type: 2}
   _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
   _spacingDirection: {x: 0, y: -1, z: 1}
-  _spacingBetweenAttractPoints: 1.5
+  _spacingBetweenAttractPoints: 2.5
   _scaleAttractPoints: 5.1
-  _amountOfAtomsPerPoint: 16
-  _atomScaleMinMax: {x: 3, y: 10}
+  _amountOfAtomsPerPoint: 8
+  _atomScaleMinMax: {x: 3, y: 8}
   _strenghtOfAttraction: 200
   _maxMagnitude: 100
   _randomPosDistance: 0.24
   _useGravity: 0
   _audioScaleMultiplier: 2
   _audioEmissionMultiplier: 1
-  _thresholdEmission: 0.3
+  _thresholdEmission: 0.36
   emissionThreshold: 0
   emissionColor: 0
   atomScale: 1
@@ -238,7 +238,7 @@ MonoBehaviour:
   _animSpeed: 0.5
   _posAnimBand: 1
   _posAnimBuffered: 0
-  _posAnimThreshold: 0.33
+  _posAnimThreshold: 0
 --- !u!4 &508727812
 Transform:
   m_ObjectHideFlags: 0
@@ -295,7 +295,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 527054254}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78d2c314afcc9a14aba8ded6bc01a97f, type: 3}
+  m_Script: {fileID: 11500000, guid: 4441d2a9d9f90a2458372728f4879070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _audioPeer: {fileID: 1781997483}
@@ -334,8 +334,8 @@ MonoBehaviour:
   _attractor: {fileID: 3061966838894134775, guid: 6761f49a2b2e6b240bd67eee13f1744e, type: 3}
   _gradient:
     serializedVersion: 2
-    key0: {r: 0, g: 0.0022439957, b: 1, a: 1}
-    key1: {r: 0.019607855, g: 0.79115576, b: 0.8745098, a: 1}
+    key0: {r: 0.6101732, g: 0, b: 1, a: 1}
+    key1: {r: 0.019607855, g: 0.13992342, b: 0.8745098, a: 1}
     key2: {r: 0.07520782, g: 0.73187166, b: 0.120258704, a: 1}
     key3: {r: 0.44253698, g: 0.5568628, b: 0.06666667, a: 1}
     key4: {r: 1, g: 0.74758863, b: 0, a: 0}
@@ -364,17 +364,17 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 392e0ee7f170e35499e68414a1db6f0c, type: 2}
   _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
   _spacingDirection: {x: 1, y: -1, z: 0}
-  _spacingBetweenAttractPoints: 1.5
+  _spacingBetweenAttractPoints: 2.5
   _scaleAttractPoints: 5.1
-  _amountOfAtomsPerPoint: 16
-  _atomScaleMinMax: {x: 3, y: 10}
+  _amountOfAtomsPerPoint: 8
+  _atomScaleMinMax: {x: 3, y: 8}
   _strenghtOfAttraction: 200
   _maxMagnitude: 100
   _randomPosDistance: 0.24
   _useGravity: 0
   _audioScaleMultiplier: 2
   _audioEmissionMultiplier: 1
-  _thresholdEmission: 0.3
+  _thresholdEmission: 0.36
   emissionThreshold: 0
   emissionColor: 0
   atomScale: 1
@@ -416,7 +416,7 @@ MonoBehaviour:
   _animSpeed: 0.5
   _posAnimBand: 1
   _posAnimBuffered: 0
-  _posAnimThreshold: 0.33
+  _posAnimThreshold: 0
 --- !u!4 &570483540
 Transform:
   m_ObjectHideFlags: 0
@@ -845,8 +845,8 @@ MonoBehaviour:
   _attractor: {fileID: 3061966838894134775, guid: 6761f49a2b2e6b240bd67eee13f1744e, type: 3}
   _gradient:
     serializedVersion: 2
-    key0: {r: 0, g: 0.0022439957, b: 1, a: 1}
-    key1: {r: 0.019607855, g: 0.79115576, b: 0.8745098, a: 1}
+    key0: {r: 0.6101732, g: 0, b: 1, a: 1}
+    key1: {r: 0.019607855, g: 0.13992342, b: 0.8745098, a: 1}
     key2: {r: 0.07520782, g: 0.73187166, b: 0.120258704, a: 1}
     key3: {r: 0.44253698, g: 0.5568628, b: 0.06666667, a: 1}
     key4: {r: 1, g: 0.74758863, b: 0, a: 0}
@@ -875,17 +875,17 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 392e0ee7f170e35499e68414a1db6f0c, type: 2}
   _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
   _spacingDirection: {x: -1, y: -1, z: 0}
-  _spacingBetweenAttractPoints: 1.5
+  _spacingBetweenAttractPoints: 2.5
   _scaleAttractPoints: 5.1
-  _amountOfAtomsPerPoint: 16
-  _atomScaleMinMax: {x: 3, y: 10}
+  _amountOfAtomsPerPoint: 8
+  _atomScaleMinMax: {x: 3, y: 8}
   _strenghtOfAttraction: 200
   _maxMagnitude: 100
   _randomPosDistance: 0.24
   _useGravity: 0
   _audioScaleMultiplier: 2
   _audioEmissionMultiplier: 1
-  _thresholdEmission: 0.3
+  _thresholdEmission: 0.36
   emissionThreshold: 0
   emissionColor: 0
   atomScale: 1
@@ -927,7 +927,7 @@ MonoBehaviour:
   _animSpeed: 0.5
   _posAnimBand: 1
   _posAnimBuffered: 0
-  _posAnimThreshold: 0.33
+  _posAnimThreshold: 0
 --- !u!4 &801607612
 Transform:
   m_ObjectHideFlags: 0
@@ -976,8 +976,8 @@ MonoBehaviour:
   _attractor: {fileID: 3061966838894134775, guid: 6761f49a2b2e6b240bd67eee13f1744e, type: 3}
   _gradient:
     serializedVersion: 2
-    key0: {r: 0, g: 0.0022439957, b: 1, a: 1}
-    key1: {r: 0.019607855, g: 0.79115576, b: 0.8745098, a: 1}
+    key0: {r: 0.6101732, g: 0, b: 1, a: 1}
+    key1: {r: 0.019607855, g: 0.13992342, b: 0.8745098, a: 1}
     key2: {r: 0.07520782, g: 0.73187166, b: 0.120258704, a: 1}
     key3: {r: 0.44253698, g: 0.5568628, b: 0.06666667, a: 1}
     key4: {r: 1, g: 0.74758863, b: 0, a: 0}
@@ -1006,17 +1006,17 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 392e0ee7f170e35499e68414a1db6f0c, type: 2}
   _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
   _spacingDirection: {x: 0, y: -1, z: -1}
-  _spacingBetweenAttractPoints: 1.5
+  _spacingBetweenAttractPoints: 2.5
   _scaleAttractPoints: 5.1
-  _amountOfAtomsPerPoint: 16
-  _atomScaleMinMax: {x: 3, y: 10}
+  _amountOfAtomsPerPoint: 8
+  _atomScaleMinMax: {x: 3, y: 8}
   _strenghtOfAttraction: 200
   _maxMagnitude: 100
   _randomPosDistance: 0.24
   _useGravity: 0
   _audioScaleMultiplier: 2
   _audioEmissionMultiplier: 1
-  _thresholdEmission: 0.3
+  _thresholdEmission: 0.36
   emissionThreshold: 0
   emissionColor: 0
   atomScale: 1
@@ -1058,7 +1058,7 @@ MonoBehaviour:
   _animSpeed: 0.5
   _posAnimBand: 1
   _posAnimBuffered: 0
-  _posAnimThreshold: 0.33
+  _posAnimThreshold: 0
 --- !u!4 &843344273
 Transform:
   m_ObjectHideFlags: 0
@@ -1200,8 +1200,8 @@ MonoBehaviour:
   _attractor: {fileID: 3061966838894134775, guid: 6761f49a2b2e6b240bd67eee13f1744e, type: 3}
   _gradient:
     serializedVersion: 2
-    key0: {r: 0, g: 0.0022439957, b: 1, a: 1}
-    key1: {r: 0.019607855, g: 0.79115576, b: 0.8745098, a: 1}
+    key0: {r: 0.6101732, g: 0, b: 1, a: 1}
+    key1: {r: 0.019607855, g: 0.13992342, b: 0.8745098, a: 1}
     key2: {r: 0.07520782, g: 0.73187166, b: 0.120258704, a: 1}
     key3: {r: 0.44253698, g: 0.5568628, b: 0.06666667, a: 1}
     key4: {r: 1, g: 0.74758863, b: 0, a: 0}
@@ -1230,17 +1230,17 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 392e0ee7f170e35499e68414a1db6f0c, type: 2}
   _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
   _spacingDirection: {x: 1, y: 1, z: 0}
-  _spacingBetweenAttractPoints: 1.5
+  _spacingBetweenAttractPoints: 2.5
   _scaleAttractPoints: 5.1
-  _amountOfAtomsPerPoint: 16
-  _atomScaleMinMax: {x: 3, y: 10}
+  _amountOfAtomsPerPoint: 8
+  _atomScaleMinMax: {x: 3, y: 8}
   _strenghtOfAttraction: 200
   _maxMagnitude: 100
   _randomPosDistance: 0.24
   _useGravity: 0
   _audioScaleMultiplier: 2
   _audioEmissionMultiplier: 1
-  _thresholdEmission: 0.3
+  _thresholdEmission: 0.36
   emissionThreshold: 0
   emissionColor: 0
   atomScale: 1
@@ -1282,7 +1282,7 @@ MonoBehaviour:
   _animSpeed: 0.5
   _posAnimBand: 1
   _posAnimBuffered: 0
-  _posAnimThreshold: 0.33
+  _posAnimThreshold: 0
 --- !u!4 &1010167610
 Transform:
   m_ObjectHideFlags: 0
@@ -1536,8 +1536,8 @@ MonoBehaviour:
   _attractor: {fileID: 3061966838894134775, guid: 6761f49a2b2e6b240bd67eee13f1744e, type: 3}
   _gradient:
     serializedVersion: 2
-    key0: {r: 0, g: 0.0022439957, b: 1, a: 1}
-    key1: {r: 0.019607855, g: 0.79115576, b: 0.8745098, a: 1}
+    key0: {r: 0.6101732, g: 0, b: 1, a: 1}
+    key1: {r: 0.019607855, g: 0.13992342, b: 0.8745098, a: 1}
     key2: {r: 0.07520782, g: 0.73187166, b: 0.120258704, a: 1}
     key3: {r: 0.44253698, g: 0.5568628, b: 0.06666667, a: 1}
     key4: {r: 1, g: 0.74758863, b: 0, a: 0}
@@ -1566,17 +1566,17 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 392e0ee7f170e35499e68414a1db6f0c, type: 2}
   _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
   _spacingDirection: {x: -1, y: 1, z: 0}
-  _spacingBetweenAttractPoints: 1.5
+  _spacingBetweenAttractPoints: 2.5
   _scaleAttractPoints: 5.1
-  _amountOfAtomsPerPoint: 16
-  _atomScaleMinMax: {x: 3, y: 10}
+  _amountOfAtomsPerPoint: 8
+  _atomScaleMinMax: {x: 3, y: 8}
   _strenghtOfAttraction: 200
   _maxMagnitude: 100
   _randomPosDistance: 0.24
   _useGravity: 0
   _audioScaleMultiplier: 2
   _audioEmissionMultiplier: 1
-  _thresholdEmission: 0.3
+  _thresholdEmission: 0.36
   emissionThreshold: 0
   emissionColor: 0
   atomScale: 1
@@ -1618,7 +1618,7 @@ MonoBehaviour:
   _animSpeed: 0.5
   _posAnimBand: 1
   _posAnimBuffered: 0
-  _posAnimThreshold: 0.33
+  _posAnimThreshold: 0
 --- !u!1 &1408537437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1812,7 +1812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 341b29e8e31fe994db948f2226b3fc30, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 570ad5a320a38be4c98c9e41a44cb2bf, type: 2}
   isGlobal: 0
   blendDistance: 0
   weight: 1
@@ -2018,8 +2018,8 @@ MonoBehaviour:
   _attractor: {fileID: 3061966838894134775, guid: 6761f49a2b2e6b240bd67eee13f1744e, type: 3}
   _gradient:
     serializedVersion: 2
-    key0: {r: 0, g: 0.0022439957, b: 1, a: 1}
-    key1: {r: 0.019607855, g: 0.79115576, b: 0.8745098, a: 1}
+    key0: {r: 0.6101732, g: 0, b: 1, a: 1}
+    key1: {r: 0.019607855, g: 0.13992342, b: 0.8745098, a: 1}
     key2: {r: 0.07520782, g: 0.73187166, b: 0.120258704, a: 1}
     key3: {r: 0.44253698, g: 0.5568628, b: 0.06666667, a: 1}
     key4: {r: 1, g: 0.74758863, b: 0, a: 0}
@@ -2048,17 +2048,17 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 392e0ee7f170e35499e68414a1db6f0c, type: 2}
   _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
   _spacingDirection: {x: 0, y: 1, z: 1}
-  _spacingBetweenAttractPoints: 1.5
+  _spacingBetweenAttractPoints: 2.5
   _scaleAttractPoints: 5.1
-  _amountOfAtomsPerPoint: 16
-  _atomScaleMinMax: {x: 3, y: 10}
+  _amountOfAtomsPerPoint: 8
+  _atomScaleMinMax: {x: 3, y: 8}
   _strenghtOfAttraction: 200
   _maxMagnitude: 100
   _randomPosDistance: 0.24
   _useGravity: 0
   _audioScaleMultiplier: 2
   _audioEmissionMultiplier: 1
-  _thresholdEmission: 0.3
+  _thresholdEmission: 0.36
   emissionThreshold: 0
   emissionColor: 0
   atomScale: 1
@@ -2100,7 +2100,7 @@ MonoBehaviour:
   _animSpeed: 0.5
   _posAnimBand: 1
   _posAnimBuffered: 0
-  _posAnimThreshold: 0.33
+  _posAnimThreshold: 0
 --- !u!4 &1570939015
 Transform:
   m_ObjectHideFlags: 0
@@ -2149,8 +2149,8 @@ MonoBehaviour:
   _attractor: {fileID: 3061966838894134775, guid: 6761f49a2b2e6b240bd67eee13f1744e, type: 3}
   _gradient:
     serializedVersion: 2
-    key0: {r: 0, g: 0.0022439957, b: 1, a: 1}
-    key1: {r: 0.019607855, g: 0.79115576, b: 0.8745098, a: 1}
+    key0: {r: 0.6101732, g: 0, b: 1, a: 1}
+    key1: {r: 0.019607855, g: 0.13992342, b: 0.8745098, a: 1}
     key2: {r: 0.07520782, g: 0.73187166, b: 0.120258704, a: 1}
     key3: {r: 0.44253698, g: 0.5568628, b: 0.06666667, a: 1}
     key4: {r: 1, g: 0.74758863, b: 0, a: 0}
@@ -2179,17 +2179,17 @@ MonoBehaviour:
   _material: {fileID: 2100000, guid: 392e0ee7f170e35499e68414a1db6f0c, type: 2}
   _attractPoints: 0000000001000000020000000300000004000000050000000600000007000000
   _spacingDirection: {x: 0, y: 1, z: -1}
-  _spacingBetweenAttractPoints: 1.5
+  _spacingBetweenAttractPoints: 2.5
   _scaleAttractPoints: 5.1
-  _amountOfAtomsPerPoint: 16
-  _atomScaleMinMax: {x: 3, y: 10}
+  _amountOfAtomsPerPoint: 8
+  _atomScaleMinMax: {x: 3, y: 8}
   _strenghtOfAttraction: 200
   _maxMagnitude: 100
   _randomPosDistance: 0.24
   _useGravity: 0
   _audioScaleMultiplier: 2
   _audioEmissionMultiplier: 1
-  _thresholdEmission: 0.3
+  _thresholdEmission: 0.36
   emissionThreshold: 0
   emissionColor: 0
   atomScale: 1
@@ -2231,7 +2231,7 @@ MonoBehaviour:
   _animSpeed: 0.5
   _posAnimBand: 1
   _posAnimBuffered: 0
-  _posAnimThreshold: 0.33
+  _posAnimThreshold: 0
 --- !u!4 &1750409801
 Transform:
   m_ObjectHideFlags: 0
@@ -2264,7 +2264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1781997483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2287,7 +2287,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b5f104a781067bc47953ea6459553bc9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c9131122d8c9e5341b776d821bb35cad, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
@@ -2386,4 +2386,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1927728125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1927728127}
+  - component: {fileID: 1927728126}
+  m_Layer: 0
+  m_Name: ChangeScene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1927728126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927728125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fcecf2900f100a40956eb39074ed815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayBeforeLoading: 10
+  sceneNameToLoad: 
+  _audioPeer: {fileID: 1781997483}
+  Apmlitude: 0
+--- !u!4 &1927728127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927728125}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
