@@ -16,7 +16,7 @@ public class ChangeScene : MonoBehaviour
     [SerializeField]
     private float delayBeforeLoading = 10f;
     [SerializeField]
-    private string sceneNameToLoad;
+    // private string sceneNameToLoad;
     private float timeElapsed;
 
     public AudioPeer _audioPeer;
@@ -35,7 +35,8 @@ public class ChangeScene : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().name == "ScenePrincipal")
             {
-                SceneManager.LoadScene(sceneNameToLoad);
+                int SceneIndex = rand.Next(1, 5);
+                SceneManager.LoadScene(SceneIndex);
                 DontDestroyOnLoad(this._audioPeer);
             } 
             else

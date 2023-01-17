@@ -755,7 +755,7 @@ BoxCollider:
   m_GameObject: {fileID: 422602926}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -4010,7 +4010,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1876852894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4023,6 +4023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e3cb5334c4a37489a20bf918926ac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioSource: {fileID: 0}
 --- !u!82 &1876852895
 AudioSource:
   m_ObjectHideFlags: 0

@@ -3,7 +3,7 @@ import librosa
 import matplotlib.pyplot as plt
 import numpy as np
 
-filename = "glue.mp3"
+filename = ".\glue.mp3"
 audio, sr = librosa.load(filename, sr=None, mono=True)
 t = np.linspace(0, len(audio) / sr, len(audio))
 

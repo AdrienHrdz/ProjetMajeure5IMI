@@ -6,6 +6,10 @@ using UnityEngine;
 public class ExecPython : MonoBehaviour {
 
     public int BPM;
+    // public AudioPeer _audioPeer;
+    // public AudioClip _audioClip;
+    // public string _filename;
+
     private void Start() {
         var process = new Process
         {
@@ -23,6 +27,12 @@ public class ExecPython : MonoBehaviour {
         process.WaitForExit();
 
         UnityEngine.Debug.Log(output);
+        // _audioClip = _audioPeer._audioSource.clip;
+        // _filename = _audioClip.name;
+        // UnityEngine.Debug.Log(_filename);
+        // UnityEngine.Debug.Log(AudioPeer._audioSo urce);
+        
+        
         BPM = int.Parse(output);
         // process.StandardOutput.BaseStream.Flush();
         // string line;
