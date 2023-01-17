@@ -27,6 +27,12 @@ public class ChangeScene : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKey("escape") || Input.GetKey("space"))
+        {
+            Debug.Log("Quit");
+            Application.Quit();
+        }
+
         timeElapsed += Time.deltaTime;
         Apmlitude = AudioPeer._AmplitudeBuffer;
 

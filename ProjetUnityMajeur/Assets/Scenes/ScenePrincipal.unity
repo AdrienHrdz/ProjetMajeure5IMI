@@ -387,7 +387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayBeforeLoading: 1
-  sceneNameToLoad: 
+  timeElapsed: 0
   _audioPeer: {fileID: 320495281}
   Apmlitude: 0
 --- !u!4 &622107725
@@ -503,7 +503,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1139816160
 MonoBehaviour:
   m_ObjectHideFlags: 0
