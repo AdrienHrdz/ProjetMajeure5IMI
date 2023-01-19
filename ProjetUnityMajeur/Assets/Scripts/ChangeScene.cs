@@ -41,8 +41,8 @@ public class ChangeScene : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().name == "ScenePrincipal")
             {
-                int SceneIndex = rand.Next(1, 5);
-                SceneManager.LoadScene(SceneIndex);
+                // int SceneIndex = rand.Next(1, 5);
+                SceneManager.LoadScene(1);
                 DontDestroyOnLoad(this._audioPeer);
             } 
             else
@@ -51,8 +51,23 @@ public class ChangeScene : MonoBehaviour
                 {
                     if (AudioPeer._AmplitudeBuffer < 0.2f || timeElapsed > delayBeforeLoading + 25f)
                     {
-                        int SceneIndex = rand.Next(1, 5);
-                        SceneManager.LoadScene(SceneIndex);
+                        // int SceneIndex = rand.Next(1, 5);
+                        switch (SceneManager.GetActiveScene().buildIndex)
+                        {
+                            case 1:
+                                SceneManager.LoadScene(2);
+                                break;
+                            case 2:
+                                SceneManager.LoadScene(3);
+                                break;
+                            case 3:
+                                SceneManager.LoadScene(4);
+                                break;
+                            case 4:
+                                SceneManager.LoadScene(1);
+                                break;
+                        }
+                        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                         
                         DontDestroyOnLoad(this._audioPeer);
                     }

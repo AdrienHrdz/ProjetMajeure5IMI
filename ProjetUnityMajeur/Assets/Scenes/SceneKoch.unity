@@ -3210,6 +3210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e3cb5334c4a37489a20bf918926ac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _audioSource: {fileID: 0}
 --- !u!82 &799877805
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5616,7 +5617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 63f9c763a154edf48b7fd946f2472a9c, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 341b29e8e31fe994db948f2226b3fc30, type: 2}
   isGlobal: 0
   blendDistance: 0
   weight: 1
@@ -8250,7 +8251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayBeforeLoading: 10
-  sceneNameToLoad: 
+  timeElapsed: 0
   _audioPeer: {fileID: 799877804}
   Apmlitude: 0
 --- !u!4 &2039001812

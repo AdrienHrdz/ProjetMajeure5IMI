@@ -46,12 +46,26 @@ while k1 < len(audio):
 
 
 plt.figure(1)
-plt.subplot(211)
+plt.subplot(311)
+plt.plot(t, audio, 'b')
+plt.ylabel('Audio')
+k1 = int(60*sr)
+k2 = int(80*sr)
+window = scipy.signal.windows.blackmanharris(k2 - k1)
+t_window = np.linspace(k1/sr, k2/ sr, len(window))
+k1 = int(60*sr)
+k2 = int(80*sr)
+audio_crop = audio[k1:k2]
+audio_crop = audio_crop * window
+plt.plot(t_window, audio_crop, 'g')
+plt.plot(t_window, window, 'r--')
+
+plt.subplot(312)
 plt.plot(bpmList, 'b.')
 plt.xlabel('Temps (s)')
 plt.ylabel('BPM')
 
-plt.subplot(212)
+plt.subplot(313)
 bins = np.arange(90, 250, 1)
 bpmHist, bin_edges = np.histogram(bpmList, bins=bins)
 # plt.plot(bpmHist[1][:-1], bpmHist[0], 'b.')
@@ -66,11 +80,11 @@ print(f'{filename} : BPM = {BPM:.2f}')
 
 plt.subplots_adjust(hspace=0.5)
 
-plt.subplot(211)
+plt.subplot(312)
 plt.axhline(y=BPM, color='r', linestyle='--')
 plt.text(0, BPM+10, f'{BPM:.2f} BPM', color='r', fontsize=12)
 
-plt.suptitle(f'{filename}', fontsize=16)
+# plt.suptitle(f'{filename}', fontsize=16)
 
 plt.savefig(f'.\img\{filename}_BPM.png')
 plt.show()
