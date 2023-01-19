@@ -7,6 +7,7 @@ public class AttractTo : MonoBehaviour
     Rigidbody _rigidbody;
     public Transform _attractedTo;
     public float _strenghtOfAttraction, _maxMagnitude;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +20,7 @@ public class AttractTo : MonoBehaviour
         if (_attractedTo != null)
         {
             Vector3 direction = _attractedTo.position - transform.position;
-            _rigidbody.AddForce(direction.normalized * _strenghtOfAttraction);
-
+            _rigidbody.AddForce(direction * _strenghtOfAttraction); // normaliser dir ?
             if (_rigidbody.velocity.magnitude > _maxMagnitude)
                 _rigidbody.velocity = _rigidbody.velocity.normalized * _maxMagnitude;
         }

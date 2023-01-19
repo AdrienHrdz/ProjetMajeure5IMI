@@ -102,8 +102,9 @@ public class Phyllotaxis : MonoBehaviour
 
     void Update ()
     {
-        //_trailColor = Color.HSVToRGB(Time.deltaTime, 1, 1);
-        //_trailMat.SetColor("_TintColor", _trailColor);
+        // Anim color HSV
+        // _trailColor = HSVColor.TimeToHSV(Time.time * Time.deltaTime * 1000);
+        // _trailMat.SetColor("_TintColor", _trailColor);
 
         if (_useScaleAnimation)
         {

@@ -19,15 +19,21 @@ public class SpotRGB : MonoBehaviour
     void Start()
     {
         _R.intensity = _intensity * _intensity_R;
+        _R.range = _range;
         _G.intensity = _intensity * _intensity_G;
+        _G.range = _range;
         _B.intensity = _intensity * _intensity_B;
+        _B.range = _range;
     }
 
     // Update is called once per frame
     void Update()
     {
         _R.intensity = _intensity * _intensity_R;
+        _R.range = _range;
         _G.intensity = _intensity * _intensity_G;
+        _G.range = _range;
         _B.intensity = _intensity * _intensity_B;
+        _B.range = _range;
     }
 }

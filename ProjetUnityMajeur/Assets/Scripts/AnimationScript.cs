@@ -11,16 +11,9 @@ public class AnimationScript : MonoBehaviour
     public SpotRGB _spotRGB_2;
     public float _intensityDefault;
     public float _intensityMultiplier;
-    public float check_0;
-    public float check_1;
-    public float check_2;
-    public float check_3;
-    public float check_4;
-    public float check_5;
-    public float check_6;
-    public float check_7;
+    public float[] checksAudioPeer;
 
-    public float check_time;
+    public float checkTimeSeconds;
 
     public Camera _camera;
     private Vector3 _posInitCamera;
@@ -28,6 +21,7 @@ public class AnimationScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        checksAudioPeer = new float[8];
         _posInitCamera = _camera.transform.position;
         // _spotRGB._intensity = _intensity;
     }
@@ -127,15 +121,15 @@ public class AnimationScript : MonoBehaviour
     void Update()
     {
         // check = _intensityMultiplier * (AudioPeer._freqBand[0] + 1);
-        check_0 = AudioPeer._freqBand[0];
-        check_1 = AudioPeer._freqBand[1];
-        check_2 = AudioPeer._freqBand[2];
-        check_3 = AudioPeer._freqBand[3];
-        check_4 = AudioPeer._freqBand[4];
-        check_5 = AudioPeer._freqBand[5];
-        check_6 = AudioPeer._freqBand[6];
-        check_7 = AudioPeer._freqBand[7];
-        check_time = Time.time;
+        checksAudioPeer[0] = AudioPeer._freqBand[0];
+        checksAudioPeer[1] = AudioPeer._freqBand[1];
+        checksAudioPeer[2] = AudioPeer._freqBand[2];
+        checksAudioPeer[3] = AudioPeer._freqBand[3];
+        checksAudioPeer[4] = AudioPeer._freqBand[4];
+        checksAudioPeer[5] = AudioPeer._freqBand[5];
+        checksAudioPeer[6] = AudioPeer._freqBand[6];
+        checksAudioPeer[7] = AudioPeer._freqBand[7];
+        checkTimeSeconds = Mathf.Round(Time.time);
 
         // _spotRGB._intensity = _intensity * (AudioPeer._freqBand[0] + 1);
 
@@ -146,7 +140,7 @@ public class AnimationScript : MonoBehaviour
             child.GetComponent<SpotRGB>().transform.Rotate(0, 0, AudioPeer._freqBand[6] * 10000 * Time.deltaTime);
         }
         
-        ZoomCamera(AudioPeer._freqBand[1]);
+        // ZoomCamera(AudioPeer._freqBand[1]);
         AnimHSV(_spotRGB_1, Time.time);
         AnimHSV(_spotRGB_2, Time.time + 0.5f);
     }
