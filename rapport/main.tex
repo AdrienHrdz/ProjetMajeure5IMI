@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[french]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage[T1]{fontenc}
+\usepackage{comment}
+\usepackage{authblk}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{biblatex}
+\addbibresource{Unity.bib}
+\usepackage{csquotes}
+\usepackage{multicol}
+
+
+
+
+
+
+\title{Projet de fin de majeure}
+\author{Adrien Hernandez - Vincent Merrouche}
+\date{2022 / 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Rappel du projet}
+Dans le monde de la musique et des arts visuels, il existe une discipline appelée le V-Jing qui consiste à mixer des images et des sons en temps réel. 
+Le but de ce projet était de fournir une application qui permettait de créer des animations visuelles basées sur un flux audio capté en temps réel.
+
+\section{Jalons}
+Initialement, nous avions prévu un ensemble de trois jalons à courts, moyens et long termes pour ce projet. Ces jalons étaient les suivants :
+\begin{itemize}
+    \item Jalon 1 : récupérer un flux audio, faire une transformée à court termes sur ce flux audio pour en obtenir le spectrogtamme, ainsi que de commencer des tests pour les animations.
+    \item Jalon 2 : mise en commun des branches de développement, synthèse et traitement de signal; modifications des animations pour qu'elles soient impactées par le son.
+    \item Jalon 3 : Complexfier les animations et faire de l'écoute temps réel.
+\end{itemize}
+
+
+
+\section{Organistation}
+Pour être productif nous avons décidé de travailler à l'école afin de bénéficier d'une ambiance de travail et potentiellement de l'aide disponible sur place. A termes Vincent à décidé de travailler depuis chez lui car son ordinateur fixe est plus performant que son ordinateur portable et il dispose de 2 écrans. C'était donc plus pratique pour lui de travailler depuis chez lui. 
+
+\section{Versionnement du code}
+Nous avons fait le choix d'utiliser un service de versionnement du code afin de pouvoir bénéficier de sauvegardes et d'une simplicité pour travailler à plusieurs. Pour cela nous avons utliser le service GitHub basé sur le logiciel Git. 
+
+Le repo distant était organisé sur 3 branches distinctes, une branche \textit{main}, et deux branches pour chacun des membres du groupe. Chaque membre travaillait donc sur sa branche et pouvait faire autant de commit que nécessaire. 
+
+Nous avons fait le choix de ne rien commit sur la branche \textit{main} afin de ne pas avoir de conflits lors de la fusion des branches. Les commits sur la branche \textit{main} étaient donc effectués par \textit{pull request} afin de pouvoir vérifier les modifications apportées par les autres membres du groupe.
+
+Nous avons eu du mal à mettre en place ce systèmes de branches et de pull request, mais nous avons finalement réussi à le mettre en place et à le faire fonctionner correctement. Ce type de fonctionnement est très présent dans le monde professionnel, c'était donc utile de se familiariser avec le principe.
+
+
+\section{Résultats}
+
+\subsection*{Jalon 1}
+Le jalon 1 s'est bien passé. Il a été un peu retardé par la mise en place du versionnement. Nous avons eu quelques problèmes avec nos branches git respectives. 
+
+\subsection*{Jalon 2}
+Le jalon 2 s'est bien passé et les objectifs ont été atteints. De plus, la fusion des branches de développement git s'est passée sans problèmes majeurs. 
+
+\subsection*{Jalon 3}
+Le jalon 3 n'a pas été totalement complété. Nous avons réussi à produire des animations plus complexes, mais nous n'avons pas réussi à faire de l'écoute temps réel. L'écoute en temps réel s'est avérée plus compliquée que prévu, cependant avec un délai supplémentaire cette fonctionnalité aurait pu être implémentée.
+
+\section{Conclusion}
+Nous avons réussi à produire une application qui permet de visualiser des animations modifiées par la musique jouée. 
+\end{document}
+
